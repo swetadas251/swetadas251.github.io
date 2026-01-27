@@ -943,8 +943,9 @@
         }
 
         .involvement-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 1.5rem;
         }
 
@@ -958,6 +959,8 @@
             align-items: center;
             text-align: center;
             transition: all 0.3s ease;
+            width: calc(25% - 1.5rem);
+            min-width: 250px;
         }
 
         .involvement-card:hover {
@@ -1383,17 +1386,6 @@
                     <span class="skill-tag">Vercel</span>
                     <span class="skill-tag">Android Studio</span>
                     <span class="skill-tag">Tableau</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><span>🎯</span> Focus Areas</h3>
-                <div class="skills-list">
-                    <span class="skill-tag">AI/ML</span>
-                    <span class="skill-tag">Full-Stack Dev</span>
-                    <span class="skill-tag">HCI</span>
-                    <span class="skill-tag">Data Analysis</span>
-                    <span class="skill-tag">API Development</span>
-                    <span class="skill-tag">Cryptography</span>
                 </div>
             </div>
         </div>
