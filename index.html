@@ -48,7 +48,6 @@
             line-height: 1.6;
         }
 
-        /* Animated Gradient Background */
         .bg-gradient {
             position: fixed;
             top: 0;
@@ -69,7 +68,6 @@
             50% { opacity: 0.8; }
         }
 
-        /* Sparkle Effect */
         .sparkles {
             position: fixed;
             top: 0;
@@ -105,7 +103,6 @@
             50% { opacity: 1; transform: scale(1); }
         }
 
-        /* Floating Blobs */
         .blob {
             position: fixed;
             border-radius: 50%;
@@ -148,7 +145,6 @@
             75% { transform: translate(20px, 30px) scale(1.02); }
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -226,7 +222,6 @@
             box-shadow: 0 10px 30px rgba(255, 105, 180, 0.4);
         }
 
-        /* Mobile Menu */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
@@ -242,7 +237,6 @@
             transition: all 0.3s ease;
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -270,33 +264,6 @@
             to { opacity: 1; transform: translateX(0); }
         }
 
-        .greeting {
-            font-family: 'Space Mono', monospace;
-            color: var(--pink);
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .greeting .wave {
-            display: inline-block;
-            animation: wave 2s infinite;
-            transform-origin: 70% 70%;
-            font-size: 1.5rem;
-        }
-
-        @keyframes wave {
-            0%, 100% { transform: rotate(0deg); }
-            10%, 30% { transform: rotate(14deg); }
-            20% { transform: rotate(-8deg); }
-            40% { transform: rotate(-4deg); }
-            50%, 70% { transform: rotate(10deg); }
-            60% { transform: rotate(0deg); }
-            80% { transform: rotate(-4deg); }
-        }
-
         .hero-title {
             font-size: clamp(2.5rem, 5vw, 4.5rem);
             font-weight: 800;
@@ -311,42 +278,12 @@
             background-clip: text;
         }
 
-        .hero-subtitle {
-            font-size: clamp(1.2rem, 2vw, 1.6rem);
-            color: var(--gray);
-            margin-bottom: 1.5rem;
-            font-weight: 500;
-        }
-
         .hero-description {
             color: var(--gray);
             font-size: 1.1rem;
             max-width: 520px;
             margin-bottom: 2rem;
             line-height: 1.8;
-        }
-
-        .hero-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-bottom: 2rem;
-        }
-
-        .tag {
-            padding: 0.6rem 1.2rem;
-            background: rgba(255, 105, 180, 0.1);
-            border: 1px solid rgba(255, 105, 180, 0.2);
-            border-radius: 50px;
-            font-size: 0.9rem;
-            color: var(--pink-light);
-            transition: all 0.3s ease;
-        }
-
-        .tag:hover {
-            background: rgba(255, 105, 180, 0.2);
-            border-color: var(--pink);
-            transform: translateY(-2px);
         }
 
         .hero-buttons {
@@ -397,7 +334,6 @@
             background: rgba(255, 105, 180, 0.1);
         }
 
-        /* Hero Image */
         .hero-image-container {
             position: relative;
             display: flex;
@@ -451,50 +387,6 @@
             z-index: 1;
         }
 
-        .floating-badge {
-            position: absolute;
-            background: rgba(13, 13, 26, 0.95);
-            backdrop-filter: blur(15px);
-            padding: 0.8rem 1.2rem;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 105, 180, 0.2);
-            font-size: 0.85rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            animation: floatBadge 3s infinite ease-in-out;
-            z-index: 2;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .floating-badge.badge-1 {
-            top: 5%;
-            right: -5%;
-            animation-delay: 0s;
-        }
-
-        .floating-badge.badge-2 {
-            bottom: 25%;
-            left: -10%;
-            animation-delay: -1s;
-        }
-
-        .floating-badge.badge-3 {
-            bottom: 0%;
-            right: 10%;
-            animation-delay: -2s;
-        }
-
-        @keyframes floatBadge {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .badge-icon {
-            font-size: 1.2rem;
-        }
-
-        /* Section Styles */
         section {
             padding: 100px 5%;
             max-width: 1400px;
@@ -504,15 +396,6 @@
         .section-header {
             text-align: center;
             margin-bottom: 4rem;
-        }
-
-        .section-label {
-            font-family: 'Space Mono', monospace;
-            color: var(--pink);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 1rem;
         }
 
         .section-title {
@@ -527,7 +410,6 @@
             background-clip: text;
         }
 
-        /* Get To Know Me Section */
         #about-me {
             background: linear-gradient(135deg, rgba(255, 105, 180, 0.03), rgba(147, 112, 219, 0.03));
             border-radius: 40px;
@@ -535,20 +417,10 @@
             padding: 80px 5%;
         }
 
-        /* Get To Know Me Section - Simplified */
         .about-me-simple {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
-        }
-
-        .about-text-centered h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
         .about-text-centered p {
@@ -562,115 +434,16 @@
             color: var(--pink-light);
         }
 
-        /* Projects Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+        .about-text-centered a {
+            color: var(--pink-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
-        .project-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 105, 180, 0.1);
-            border-radius: 24px;
-            overflow: hidden;
-            transition: all 0.4s ease;
+        .about-text-centered a:hover {
+            color: var(--pink);
         }
 
-        .project-card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(255, 105, 180, 0.3);
-            box-shadow: 0 20px 60px rgba(255, 105, 180, 0.15);
-        }
-
-        .project-card .project-image {
-            height: 180px;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .project-card .project-preview-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .project-card .project-content {
-            padding: 2rem;
-        }
-
-        .terminal-icon {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 1rem 1.5rem;
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .terminal-text {
-            font-family: 'Space Mono', monospace;
-            color: #4ADE80;
-            font-size: 1.1rem;
-        }
-
-        /* Single Project Card (keeping for backward compatibility) */
-        .project-single {
-            display: flex;
-            justify-content: center;
-        }
-
-        .project-card-large {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 105, 180, 0.1);
-            border-radius: 24px;
-            overflow: hidden;
-            transition: all 0.4s ease;
-            max-width: 500px;
-            width: 100%;
-        }
-
-        .project-card-large:hover {
-            transform: translateY(-10px);
-            border-color: rgba(255, 105, 180, 0.3);
-            box-shadow: 0 20px 60px rgba(255, 105, 180, 0.15);
-        }
-
-        .project-card-large .project-image {
-            height: 200px;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .project-preview-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .project-card-large .project-icon {
-            font-size: 5rem;
-            opacity: 0.9;
-        }
-
-        .project-card-large .project-content {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .project-card-large .project-tech {
-            justify-content: center;
-        }
-
-        .project-card-large .project-links {
-            justify-content: center;
-        }
-
-        /* Skills Section */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -694,20 +467,7 @@
         .skill-category h3 {
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .skill-category h3 span {
-            width: 40px;
-            height: 40px;
-            background: var(--gradient-1);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
+            color: var(--light);
         }
 
         .skills-list {
@@ -732,7 +492,6 @@
             transform: scale(1.05);
         }
 
-        /* Experience Section */
         .timeline {
             position: relative;
             max-width: 900px;
@@ -838,7 +597,6 @@
             font-size: 0.7rem;
         }
 
-        /* Projects Section */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -859,31 +617,8 @@
             box-shadow: 0 20px 60px rgba(255, 105, 180, 0.15);
         }
 
-        .project-image {
-            height: 180px;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .project-image .project-icon {
-            font-size: 4rem;
-            opacity: 0.9;
-        }
-
         .project-content {
             padding: 2rem;
-        }
-
-        .project-label {
-            font-family: 'Space Mono', monospace;
-            color: var(--pink);
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 0.75rem;
         }
 
         .project-title {
@@ -932,7 +667,6 @@
             color: var(--pink);
         }
 
-        /* Research Section */
         .research-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -993,7 +727,6 @@
             gap: 0.5rem;
         }
 
-        /* Involvement Section */
         #involvement {
             background: linear-gradient(135deg, rgba(147, 112, 219, 0.03), rgba(255, 105, 180, 0.03));
             border-radius: 40px;
@@ -1019,7 +752,7 @@
             text-align: center;
             transition: all 0.3s ease;
             width: calc(25% - 1.5rem);
-            min-width: 250px;
+            min-width: 200px;
         }
 
         .involvement-card:hover {
@@ -1047,15 +780,8 @@
         .involvement-role {
             color: var(--pink);
             font-size: 0.85rem;
-            margin-bottom: 0.5rem;
         }
 
-        .involvement-desc {
-            color: var(--gray);
-            font-size: 0.8rem;
-        }
-
-        /* Education Section */
         .education-card {
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid rgba(255, 105, 180, 0.1);
@@ -1092,24 +818,8 @@
         .education-info .date {
             color: var(--gray);
             font-size: 0.9rem;
-            margin-bottom: 1rem;
         }
 
-        .education-highlights {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem;
-        }
-
-        .edu-tag {
-            padding: 0.5rem 1rem;
-            background: rgba(255, 105, 180, 0.1);
-            border-radius: 50px;
-            font-size: 0.8rem;
-            color: var(--pink-light);
-        }
-
-        /* Contact Section */
         #contact {
             text-align: center;
         }
@@ -1129,7 +839,6 @@
             display: flex;
             justify-content: center;
             gap: 1.5rem;
-            margin-bottom: 2rem;
             flex-wrap: wrap;
         }
 
@@ -1155,23 +864,6 @@
             box-shadow: 0 15px 30px rgba(255, 105, 180, 0.3);
         }
 
-        .contact-email {
-            font-size: 1.2rem;
-            color: var(--light);
-            text-decoration: none;
-            display: inline-block;
-            padding: 1rem 2rem;
-            border: 2px solid rgba(255, 105, 180, 0.3);
-            border-radius: 50px;
-            transition: all 0.3s ease;
-        }
-
-        .contact-email:hover {
-            border-color: var(--pink);
-            background: rgba(255, 105, 180, 0.1);
-        }
-
-        /* Footer */
         footer {
             text-align: center;
             padding: 2rem 5%;
@@ -1180,17 +872,6 @@
             font-size: 0.9rem;
         }
 
-        footer .heart {
-            color: var(--pink);
-            animation: heartbeat 1.5s infinite;
-        }
-
-        @keyframes heartbeat {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-        }
-
-        /* Responsive Design */
         @media (max-width: 968px) {
             .hero-content {
                 grid-template-columns: 1fr;
@@ -1209,25 +890,13 @@
                 margin: 0 auto 2rem;
             }
 
-            .hero-tags, .hero-buttons {
+            .hero-buttons {
                 justify-content: center;
             }
 
             .hero-image-wrapper {
                 width: 320px;
                 height: 320px;
-            }
-
-            .floating-badge.badge-1 {
-                right: 5%;
-            }
-
-            .floating-badge.badge-2 {
-                left: 5%;
-            }
-
-            .about-me-content {
-                grid-template-columns: 1fr;
             }
 
             .education-card {
@@ -1237,10 +906,6 @@
 
             .education-logo {
                 margin: 0 auto;
-            }
-
-            .education-highlights {
-                justify-content: center;
             }
 
             .research-grid {
@@ -1275,24 +940,11 @@
                 height: 260px;
             }
 
-            .floating-badge {
-                display: none;
-            }
-
             .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .fun-facts {
-                grid-template-columns: 1fr;
-            }
-
-            .about-stats {
                 grid-template-columns: 1fr;
             }
         }
 
-        /* Scroll Animations */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -1306,7 +958,6 @@
     </style>
 </head>
 <body>
-    <!-- Background Effects -->
     <div class="bg-gradient"></div>
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
@@ -1322,7 +973,6 @@
         <div class="sparkle"></div>
     </div>
 
-    <!-- Navigation -->
     <nav>
         <div class="logo">sweta.das</div>
         <ul class="nav-links">
@@ -1340,16 +990,15 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-    <span class="highlight">Sweta Das</span>
-</h1>
-<p class="hero-description">
-    A Computer Science student at Virginia Tech passionate about creating impactful software.
-</p>
+                    <span class="highlight">Sweta Das</span>
+                </h1>
+                <p class="hero-description">
+                    A Computer Science student at Virginia Tech passionate about creating impactful software.
+                </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn-primary">
                         View My Work
@@ -1371,44 +1020,32 @@
         </div>
     </section>
 
-    <!-- Get To Know Me Section -->
     <section id="about-me" class="fade-in">
         <div class="section-header">
             <h2 class="section-title">Get To <span class="gradient">Know Me</span></h2>
         </div>
         <div class="about-me-simple">
-    <div class="about-text-centered">
-        <p>
-            I'm a junior at <strong>Virginia Tech</strong> pursuing a B.S. in Computer Science with minors in 
-            <strong>Human-Computer Interaction</strong> and <strong>Mathematics</strong>, graduating December 2026. 
-            My experience spans full-stack development, AI/ML engineering, and systems programming, with internships 
-            at the <strong>FDA</strong>, <strong>Johns Hopkins APL</strong>, and <strong>Legal Chain</strong>, where 
-            I shipped production REST APIs powered by GPT-4 and Supabase.
-        </p>
-        <p>
-            I work at the intersection of <strong>AI and Human-Computer Interaction</strong>, building tools that are 
-            both technically rigorous and genuinely usable. My research on LLM evaluation earned <strong>1st Place 
-            People's Choice</strong> at Virginia Tech's Undergraduate CS Research Symposium and was accepted to 
-            <strong>HCI International 2026</strong>.
-        </p>
-        <p>
-            Beyond academics, I serve as Membership Chair for the Society of Indian Americans, sit on the Student 
-            Engineers' Council Professional Development Committee, and teach Python, Java, and C++ to K–12 
-            students as a code coach. I'm always looking for opportunities to build software that makes a measurable 
-            impact, <strong>let's connect.</strong>
-        </p>
-    </div>
-</div>
+            <div class="about-text-centered">
+                <p>
+                    I'm a junior at <strong>Virginia Tech</strong> pursuing a B.S. in Computer Science with minors in <strong>Human-Computer Interaction</strong> and <strong>Mathematics</strong>, graduating December 2026. My experience spans full-stack development, AI/ML engineering, and systems programming, with internships at <strong>FTI Consulting</strong>, the <strong>FDA</strong>, and <strong>Legal Chain</strong>, where I shipped production REST APIs powered by GPT-4 and Supabase.
+                </p>
+                <p>
+                    I work at the intersection of <strong>AI and Human-Computer Interaction</strong>, building tools that are both technically rigorous and genuinely usable. My research on LLM evaluation earned <strong>1st Place People's Choice</strong> at Virginia Tech's Undergraduate CS Research Symposium and was accepted to <strong>HCI International 2026</strong>.
+                </p>
+                <p>
+                    Beyond academics, I serve as Membership Chair for the Society of Indian Americans, sit on the Student Engineers' Council Professional Development Committee, and teach Python, Java, and C++ to K-12 students as a code coach. I'm always looking for opportunities to build software that makes a measurable impact, <a href="#contact">let's connect</a>.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="fade-in">
         <div class="section-header">
             <h2 class="section-title">Skills & <span class="gradient">Technologies</span></h2>
         </div>
         <div class="skills-grid">
             <div class="skill-category">
-                <h3><span>💻</span> Languages</h3>
+                <h3>Languages</h3>
                 <div class="skills-list">
                     <span class="skill-tag">Java</span>
                     <span class="skill-tag">JavaScript</span>
@@ -1416,15 +1053,17 @@
                     <span class="skill-tag">TypeScript</span>
                     <span class="skill-tag">C++</span>
                     <span class="skill-tag">C</span>
+                    <span class="skill-tag">C#</span>
                     <span class="skill-tag">SQL</span>
                     <span class="skill-tag">Ruby</span>
                     <span class="skill-tag">Kotlin</span>
                     <span class="skill-tag">R</span>
+                    <span class="skill-tag">PHP</span>
                     <span class="skill-tag">HTML/CSS</span>
                 </div>
             </div>
             <div class="skill-category">
-                <h3><span>⚛️</span> Frameworks</h3>
+                <h3>Frameworks</h3>
                 <div class="skills-list">
                     <span class="skill-tag">React</span>
                     <span class="skill-tag">Vue.js</span>
@@ -1437,7 +1076,7 @@
                 </div>
             </div>
             <div class="skill-category">
-                <h3><span>🛠️</span> Tools</h3>
+                <h3>Tools</h3>
                 <div class="skills-list">
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">Docker</span>
@@ -1447,12 +1086,12 @@
                     <span class="skill-tag">Vercel</span>
                     <span class="skill-tag">Android Studio</span>
                     <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Relativity</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="fade-in">
         <div class="section-header">
             <h2 class="section-title">Work <span class="gradient">Experience</span></h2>
@@ -1460,15 +1099,32 @@
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-content">
+                    <img src="fti-logo.png" alt="FTI Consulting" class="timeline-logo">
+                    <div class="timeline-info">
+                        <span class="timeline-date">May 2026 – August 2026</span>
+                        <h3 class="timeline-title">Technology Consulting Intern</h3>
+                        <p class="timeline-company">FTI Consulting | Washington, DC</p>
+                        <ul class="timeline-description">
+                            <li>Built query logic in Relativity to sort documents into review batches; executed bulk metadata correction across 3.3M documents</li>
+                            <li>Produced daily reporting for an Am Law 100 law firm, tracking reviewer throughput and case-critical documents</li>
+                            <li>Analyzed forensic images in a simulated IP-theft investigation; reconstructed minute-by-minute event timeline</li>
+                            <li>Assessed 22 information governance processes for a post-merger data risk engagement; presented to 200+ consultants firm-wide</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
                     <img src="legalchain-logo.jpg" alt="Legal Chain" class="timeline-logo">
                     <div class="timeline-info">
-                        <span class="timeline-date">July 2025 – Present</span>
+                        <span class="timeline-date">July 2025 – May 2026</span>
                         <h3 class="timeline-title">AI Intern</h3>
                         <p class="timeline-company">Legal Chain | Newport Beach, CA (Remote)</p>
                         <ul class="timeline-description">
                             <li>Built 3 production REST APIs for court-ready contracts using GPT-4 & Supabase</li>
                             <li>Created contract formatter reducing AI hallucinations by 95%</li>
                             <li>Integrated CourtListener API for U.S. case law enrichment</li>
+                            <li>Contributed to global legal translation pipeline using Gemini + OpenLaws</li>
                         </ul>
                     </div>
                 </div>
@@ -1477,12 +1133,11 @@
                 <div class="timeline-content">
                     <img src="coderschool-logo.png" alt="theCoderSchool" class="timeline-logo">
                     <div class="timeline-info">
-                        <span class="timeline-date">July 2024 – Present</span>
+                        <span class="timeline-date">July 2024 – August 2025</span>
                         <h3 class="timeline-title">Code Coach</h3>
                         <p class="timeline-company">theCoderSchool · McLean, VA</p>
                         <ul class="timeline-description">
-                            <li>Teach Python, Java, C++ to 100+ K–12 students</li>
-                            <li>Develop personalized curriculum for different learning styles</li>
+                            <li>Delivered personalized 1:1 and group coaching in Python, Java, C++ to 100+ K–12 students</li>
                         </ul>
                     </div>
                 </div>
@@ -1495,22 +1150,7 @@
                         <h3 class="timeline-title">Regulatory Science Intern</h3>
                         <p class="timeline-company">FDA Center for Devices and Radiological Health | Silver Spring, MD</p>
                         <ul class="timeline-description">
-                            <li>Built SharePoint portal for 50+ regulatory submissions</li>
-                            <li>Developed dynamic dashboards for project tracking</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <img src="jhuapl-logo.png" alt="Johns Hopkins APL" class="timeline-logo">
-                    <div class="timeline-info">
-                        <span class="timeline-date">Oct 2021 – May 2022</span>
-                        <h3 class="timeline-title">AI Intern</h3>
-                        <p class="timeline-company">Johns Hopkins APL (ASPIRE Program) | Laurel, MD</p>
-                        <ul class="timeline-description">
-                            <li>Extended Hanabi AI agents with 1000+ human player clones</li>
-                            <li>Evaluated Keras neural networks on melanoma data</li>
+                            <li>Designed and launched a custom SharePoint-based project tracking portal for 50+ active regulatory submissions</li>
                         </ul>
                     </div>
                 </div>
@@ -1518,16 +1158,12 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="fade-in">
         <div class="section-header">
             <h2 class="section-title">My <span class="gradient">Projects</span></h2>
         </div>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-image" style="background: linear-gradient(135deg, #FF69B4, #9370DB);">
-                    <img src="studyspark-preview.png" alt="StudySpark Preview" class="project-preview-img">
-                </div>
                 <div class="project-content">
                     <h3 class="project-title">StudySpark</h3>
                     <p class="project-description">
@@ -1551,11 +1187,6 @@
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image" style="background: linear-gradient(135deg, #1a1a2e, #4D96FF);">
-                    <div class="terminal-icon">
-                        <span class="terminal-text">&gt;_ tunl 3000</span>
-                    </div>
-                </div>
                 <div class="project-content">
                     <h3 class="project-title">TUNL</h3>
                     <p class="project-description">
@@ -1579,14 +1210,11 @@
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image" style="background: linear-gradient(135deg, #1a1a2e, #6366f1);">
-                    <img src="codesync-preview.png" alt="CodeSync Preview" class="project-preview-img">
-                </div>
                 <div class="project-content">
                     <h3 class="project-title">CodeSync</h3>
                     <p class="project-description">
                         Real-time collaborative code editor where multiple developers can write code together. 
-                        Features live cursors, 12+ languages, and instant sync.
+                        Features live cursors, sandboxed execution, and instant sync.
                     </p>
                     <div class="project-tech">
                         <span>Next.js</span>
@@ -1607,7 +1235,6 @@
         </div>
     </section>
 
-    <!-- Research Section -->
     <section id="research" class="fade-in">
         <div class="section-header">
             <h2 class="section-title">Research <span class="gradient">Experience</span></h2>
@@ -1616,10 +1243,10 @@
             <div class="research-card">
                 <div class="research-icon">🧠</div>
                 <h3 class="research-title">LLM Evaluation & Human-Centered AI</h3>
-                <p class="research-org">Virginia Tech • Research Assistant • May 2025 – Present</p>
+                <p class="research-org">Virginia Tech • Research Assistant • May 2025 – May 2026</p>
                 <p class="research-description">
-                    Co-led IRB-approved study on how LLMs (GPT-4o, Gemini) simulate stakeholder 
-                    feedback across Education, Healthcare, and Productivity UI domains.
+                    Co-led IRB-approved research study evaluating how consistently LLMs (GPT-4o, Gemini 1.5 Pro) simulate stakeholder 
+                    feedback across UI design domains. Developed data preprocessing pipeline integrating human and JSON-based LLM feedback.
                 </p>
                 <div class="research-achievement">
                     1st Place People's Choice - Undergraduate CS Research Symposium
@@ -1633,14 +1260,13 @@
                 <h3 class="research-title">OpenDSA Educational Infrastructure</h3>
                 <p class="research-org">Virginia Tech • Researcher • May 2025 – August 2025</p>
                 <p class="research-description">
-                    Contributed to open-source CS learning platform. Debugged mission-critical 
-                    frontend components across Dockerized Rails environments.
+                    Engineered timezone-aware assignment scheduling infrastructure for a globally distributed Ruby on Rails + JavaScript LMS, 
+                    enhancing instructor dashboard accuracy and user experience for 1000+ students.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Involvement Section -->
     <section id="involvement" class="fade-in">
         <div class="section-header">
             <h2 class="section-title">Organizations & <span class="gradient">Involvement</span></h2>
@@ -1650,42 +1276,35 @@
                 <img src="aoe-logo.jpg" alt="Alpha Omega Epsilon" class="involvement-logo">
                 <h3 class="involvement-name">Alpha Omega Epsilon</h3>
                 <p class="involvement-role">STEM Sorority Sister</p>
-                <p class="involvement-desc">Building sisterhood in STEM</p>
             </div>
             <div class="involvement-card">
                 <img src="sec-logo.jpg" alt="Student Engineers Council" class="involvement-logo">
                 <h3 class="involvement-name">Student Engineers' Council</h3>
                 <p class="involvement-role">Professional Dev Committee</p>
-                <p class="involvement-desc">Organizing Engineering Expo</p>
             </div>
             <div class="involvement-card">
                 <img src="vthacks-logo.jpg" alt="VTHacks" class="involvement-logo">
                 <h3 class="involvement-name">VTHacks</h3>
                 <p class="involvement-role">UI/UX Committee</p>
-                <p class="involvement-desc">Designing hackathon experiences</p>
             </div>
             <div class="involvement-card">
                 <img src="swe-logo.jpg" alt="Society of Women Engineers" class="involvement-logo">
                 <h3 class="involvement-name">Society of Women Engineers</h3>
                 <p class="involvement-role">Member</p>
-                <p class="involvement-desc">Empowering women in engineering</p>
             </div>
             <div class="involvement-card">
                 <img src="sia-logo.jpg" alt="Society of Indian Americans" class="involvement-logo">
                 <h3 class="involvement-name">Society of Indian Americans</h3>
                 <p class="involvement-role">Membership Chair</p>
-                <p class="involvement-desc">Celebrating culture & community</p>
             </div>
             <div class="involvement-card">
                 <img src="iccae-logo.jpg" alt="IC CAE" class="involvement-logo">
                 <h3 class="involvement-name">IC CAE Program</h3>
                 <p class="involvement-role">Scholar</p>
-                <p class="involvement-desc">Intelligence Community Centers for Academic Excellence</p>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education" class="fade-in">
         <div class="section-header">
             <h2 class="section-title">Academic <span class="gradient">Background</span></h2>
@@ -1700,7 +1319,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="fade-in">
         <div class="section-header">
             <h2 class="section-title">Get In <span class="gradient">Touch</span></h2>
@@ -1708,7 +1326,7 @@
         <div class="contact-content">
             <p>
                 I'm always excited to connect with new people! Whether you have an opportunity, 
-                want to collaborate, or just want to say hi, my inbox is always open.
+                want to collaborate, or just want to say hi, feel free to reach out.
             </p>
             <div class="contact-links">
                 <a href="https://www.linkedin.com/in/sweta-das-aaa201314" class="contact-link" target="_blank" title="LinkedIn">
@@ -1721,31 +1339,15 @@
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
                 </a>
-                <a href="mailto:sweta.dass215@gmail.com" class="contact-link" title="Email">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                </a>
-                <a href="tel:703-597-8616" class="contact-link" title="Phone">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                    </svg>
-                </a>
             </div>
-            <a href="mailto:sweta.dass215@gmail.com" class="contact-email">
-                sweta.dass215@gmail.com
-            </a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>Designed & Built by Sweta Das © 2025</p>
+        <p>Designed & Built by Sweta Das © 2026</p>
     </footer>
 
     <script>
-        // Scroll Animation
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1763,7 +1365,6 @@
             observer.observe(el);
         });
 
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1777,7 +1378,6 @@
             });
         });
 
-        // Navbar scroll effect
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
